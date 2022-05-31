@@ -26,6 +26,8 @@
             android:text="B"
             android:textSize="24sp" />
 
+
+
     </LinearLayout>
 
     <TextView
@@ -49,5 +51,31 @@
         android:paddingVertical="4dp"
         android:text="Text"
         android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:padding="64dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="A"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:padding="64dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="B"/>
+
+
+    </LinearLayout>
 
 </LinearLayout>
