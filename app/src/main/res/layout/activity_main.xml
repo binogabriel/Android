@@ -1,202 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="32dp">
 
-    <HorizontalScrollView
-
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:background="#EF0707"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="Gabriel"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:background="#EF0707"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="Gabriel"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:background="#EF0707"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="Gabriel"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:background="#EF0707"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="Gabriel"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:background="#EF0707"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="Gabriel"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:background="#EF0707"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="Gabriel"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:background="#EF0707"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="Gabriel"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:background="#EF0707"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="Gabriel"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:background="#EF0707"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="Gabriel"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-        </LinearLayout>
-
-
-    </HorizontalScrollView>
-
-    <View
+    <EditText
+        android:id="@+id/edit_distance"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_margin="16dp"
-        android:background="#A1A1A1" />
+        android:layout_height="wrap_content"
+        android:hint="@string/distancia"
+        android:layout_marginTop="16dp"/>
 
     <TextView
+        android:id="@+id/text_distance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="16dp"
-        android:background="#EF0707"
-        android:fontFamily="sans-serif-thin"
-        android:gravity="center"
-        android:padding="16dp"
-        android:text="@string/gabriel"
+        android:layout_below="@+id/edit_distance"
+        android:layout_centerHorizontal="true"
+        android:text="@string/total_km"/>
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_distance"
+        android:hint="@string/price"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_price"
+        android:layout_centerHorizontal="true"
+        android:text="@string/price_per_litre"/>
+
+    <EditText
+        android:id="@+id/edit_autonomy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_price"
+        android:hint="@string/autonomy"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/text_autonomy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_autonomy"
+        android:layout_centerHorizontal="true"
+        android:text="@string/kms_per_litre"/>
+
+    <TextView
+        android:id="@+id/text_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textAllCaps="true"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:text="@string/total_price"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_autonomy"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_margin="16dp"
-        android:background="#A1A1A1" />
-
-    <EditText
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="Nome"
-        android:inputType="text" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="textMultiLine"
-        android:inputType="textMultiLine" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="date"
-        android:inputType="date" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="numberDecimal"
-        android:inputType="numberDecimal" />
+        android:layout_below="@id/text_total_price"
+        android:layout_centerHorizontal="true"
+        android:text="@string/r_0"
+        android:textAllCaps="true"
+        android:textColor="#3F51B5"
+        android:textSize="36sp"
+        android:layout_marginTop="32dp"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/gabriel" />
-    <ImageView
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:src="@drawable/ic_baseline_5g_24"
-        android:layout_gravity="center"
-        app:tint="@color/teal_200" />
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_total"
+        android:layout_marginTop="32dp"
+        android:text="@string/calcular"
+        android:textAllCaps="true"
+        android:paddingVertical="16dp"
+        android:textSize="18sp"
+        android:backgroundTint="@color/teal_200"/>
 
 
-</LinearLayout>
+</RelativeLayout>
