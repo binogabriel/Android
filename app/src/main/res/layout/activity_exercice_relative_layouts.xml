@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#08AD7F">
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="128dp"
+        android:hint="@string/email"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginHorizontal="32dp"
+        android:layout_below="@+id/edit_email"
+        android:layout_marginTop="16dp"
+        android:hint="@string/password"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_below="@+id/edit_password"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="true"
+        android:text="@string/login"
+        android:backgroundTint="#DADADA"
+        android:textColor="#08AD7F"/>
+
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_login"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/image_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_help_24"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:id="@+id/text_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:layout_toEndOf="@+id/image_password"
+        android:layout_alignTop="@+id/image_password"
+        android:layout_marginTop="8dp"/>
+
+
+
+</RelativeLayout>
