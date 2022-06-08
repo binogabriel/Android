@@ -15,4 +15,5 @@
     <string name="login">login</string>
     <string name="register_text">Ainda não é cadastrado? Cadastre-se!</string>
     <string name="forgot_password">Esqueceu sua senha?</string>
+    <string name="button">Button</string>
 </resources>
