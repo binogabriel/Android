@@ -16,4 +16,12 @@
     <string name="register_text">Ainda não é cadastrado? Cadastre-se!</string>
     <string name="forgot_password">Esqueceu sua senha?</string>
     <string name="button">Button</string>
+    <string name="cappuccino">Cappuccino</string>
+    <string name="text_center">Uma simples e perfeitamente extraída dose de espresso misturado com leite fresco e chocolate fazem esta bebida deliciosa.</string>
+    <string name="ingredients">Ingredientes</string>
+    <string name="minutes">15 minutos</string>
+    <string name="favorites">54214</string>
+    <string name="ingredient_1">1 dose espresso</string>
+    <string name="ingredient_2">100ml leite</string>
+    <string name="ingredient_3">1 colher de chocolate em pó</string>
 </resources>
